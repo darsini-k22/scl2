@@ -1,6 +1,4 @@
-#derivatives
-
-
+#1 derivatives
 def difference_table(y):
   for i in range(1,len(y)):
     for j in range(0,len(y)-i):
@@ -40,8 +38,9 @@ sum=0
 sum=(y[index][2]+y[index][3]+11/12*y[index][i]+5/6*y[index][i])/h**2;
 print(sum)
 
-# Trapezoidal Method
+######################################################################
 
+#2 Trapezoidal Method
 # Define function to integrate
 def f(x):
     return 1/(1 + x**2)
@@ -72,8 +71,9 @@ sub_interval = int(input("Enter number of sub intervals: "))
 result = trapezoidal(lower_limit, upper_limit, sub_interval)
 print("Integration result by Trapezoidal method is: %0.6f" % (result) )
 
+###################################################################
 
-# Simpson's 1/3 Rule
+#3 Simpson's 1/3 Rule
 
 # Define function to integrate
 def f(x):
@@ -109,8 +109,9 @@ sub_interval = int(input("Enter number of sub intervals: "))
 result = simpson13(lower_limit, upper_limit, sub_interval)
 print("Integration result by Simpson's 1/3 method is: %0.6f" % (result) )
 
+##############################################################
 
-# Simpson's 3/8 Rule
+#4 Simpson's 3/8 Rule
 import math
 # Define function to integrate
 def f(x):
