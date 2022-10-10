@@ -147,7 +147,9 @@ sub_interval = int(input("Enter number of sub intervals: "))
 result = simpson38(lower_limit, upper_limit, sub_interval)
 print("Integration result by Simpson's 3/8 method is: %0.6f" % (result) )
 
-#tapezoidal and simpson method
+#########################################################################
+
+#5 tapezoidal and simpson method
 
 def trapezoidal(t,v,h):
   sum=0
